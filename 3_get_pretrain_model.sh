@@ -1,6 +1,5 @@
 #!/bin/sh
 
-MODEL_NAME='ssd_inception_v2_coco_2018_01_28'
 PRETRAIN_MODEL_DIR=${WORKSPACE}/pretrain_model
 MODEL_FILE=${PRETRAIN_MODEL_DIR}/${MODEL_NAME}.tar.gz
 

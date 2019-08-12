@@ -12,6 +12,8 @@ sed -i "s#PATH_TO_BE_CONFIGURED/pet_label_map.pbtxt#${OBJ_DET_PATH}/data/pet_lab
 
 
 TRAINED_MODEL_DIR=${WORKSPACE}/trained_model
+#Recommended train steps: 200000
+#NUM_TRAIN_STEPS=10000
 NUM_TRAIN_STEPS=10000
 EVAL_STEPS=100
 SAMPLE_1_OF_N_EVAL_EXAMPLES=100
@@ -24,7 +26,8 @@ python ${OBJ_DET_PATH}/model_main.py \
     --num_train_steps=${NUM_TRAIN_STEPS} \
     --num_eval_steps=${EVAL_STEPS} \
     --sample_1_of_n_eval_examples=${SAMPLE_1_OF_N_EVAL_EXAMPLES} \
+    --alsologtostderr
 #    --eval_training_data=True \
 #    --checkpoint_dir=${WORKSPACE}/trained_model \
-    --alsologtostderr
+ 
 
