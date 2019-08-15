@@ -1,6 +1,6 @@
 # Installation
 
-## Download tensorflow object detection API 
+## Download Tensorflow Object Detection API 
 
 The TensorFlow Object Detection API is an open source framework built on top of TensorFlow that makes it easy to construct, train and deploy object detection models. In order to use it, clone tensorflow repository to local machine using following command:
 
@@ -11,7 +11,7 @@ git clone https://github.com/tensorflow/models.git
 Tensorflow object detection API is located under folder "tensorflow/models/research/object_detection".
 
 
-## Dependencies installation
+## Dependencies Installation
 
 Tensorflow Object Detection API depends on the following libraries:
 
@@ -49,7 +49,7 @@ pip install --user jupyter
 pip install --user matplotlib
 ```
 
-## COCO API installation
+## COCO API Installation
 
 Using following commands to install COCO API if COCO evaluation metrics are going to be used. Default metrics are
 based on those used in Pascal VOC evaluation. To use the COCO object detection metrics add `metrics_set: "coco_detection_metrics"` to the `eval_config` message in the config file. 
